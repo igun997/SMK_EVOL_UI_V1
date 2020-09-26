@@ -17,6 +17,7 @@ const rawMenu = [
                 method:function () {
                     localStorage.setItem("isLogin",0);
                     localStorage.setItem("fullIdentity",null);
+                    localStorage.removeItem("onProgressId");
                     isLogin.update(value => {
                         return value = 0;
                     })

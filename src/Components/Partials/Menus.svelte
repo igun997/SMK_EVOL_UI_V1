@@ -32,9 +32,11 @@ function toogle() {
     })
 }
 const my = JSON.parse(localStorage.getItem("fullIdentity"));
-let identity = null;
-if (my.nama !== undefined){
-    identity = my.nama+" - "+my.nis
+let identity = "";
+if (my !== null){
+    if (my.nama !== undefined){
+        identity = my.nama+" - "+my.nis
+    }
 }
 </script>
 <style>

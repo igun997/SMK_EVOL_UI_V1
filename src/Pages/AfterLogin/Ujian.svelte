@@ -31,7 +31,7 @@
             toast.success("Loaded")
 
         }else {
-            toast.warning("Load Soal Gagal")
+            toast.info("Soal Kosong")
         }
     }
     loadSoal()

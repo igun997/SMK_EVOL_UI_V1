@@ -9,6 +9,7 @@
 	import Head from "./Components/Partials/Head.svelte";
 	import HomeBL from "./Pages/BeforeLogin/Home.svelte";
 	import Ujian from "./Pages/AfterLogin/Ujian.svelte";
+	import UjianDetail from "./Pages/AfterLogin/UjianDetail.svelte";
 	import {isLogin} from "./Components/Common/Store";
 	const menu = Behavior.collapseMenu;
 	let listMenu = [];
@@ -49,6 +50,9 @@
 				<Route path="/" component="{HomeBL}" />
 				<Route path="/login" component="{HomeBL}" />
 				<Route path="/ujian" component="{Ujian}" />
+				<Route path="/ujian/:id" component="{UjianDetail}" let:params >
+					<UjianDetail id="params.id" />
+				</Route>
 			</div>
 			<ToastContainer />
 		</div>

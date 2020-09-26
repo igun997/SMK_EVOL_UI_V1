@@ -44,7 +44,8 @@ export default {
 			ps: JSON.stringify({
 				env: {
 					endpoint: "https://learning.smkkesehatanrajawali.sch.id/api/",
-					logo : "/images/logo.png"
+					logo : "/images/logo.png",
+					debug:true
 				}
 			}),
 		}),
